@@ -1,0 +1,67 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:e4dd5497-15eb-5616-9c79-e7faaaa09f42",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-05T16:31:14Z",
+    "component": {
+      "type": "application",
+      "name": "MEDICAL_AI",
+      "version": "a7904ae138c0",
+      "bom-ref": "pkg:generic/anticloud/MEDICAL_AI@a7904ae138c0",
+      "purl": "pkg:generic/anticloud/MEDICAL_AI@a7904ae138c0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "a7904ae138c01cc90ad9c3bdf52c10218bde315f"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/Project-MONAI/MONAI.git"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "torch",
+      "version": ">=2.8.0",
+      "purl": "pkg:pypi/torch@2.8.0",
+      "bom-ref": "pypi/torch@>=2.8.0"
+    },
+    {
+      "type": "library",
+      "name": "numpy",
+      "version": ">=1.24",
+      "purl": "pkg:pypi/numpy@1.24",
+      "bom-ref": "pypi/numpy@>=1.24"
+    },
+    {
+      "type": "library",
+      "name": "BUILD_MONAI_CPP",
+      "version": "={BUILD_CPP}, BUILD_MONAI_CUDA={BUILD_CUDA}, TORCH_VERSION={TORCH_VERSION}.",
+      "purl": "pkg:pypi/build-monai-cpp@{BUILD_CPP}, BUILD_MONAI_CUDA={BUILD_CUDA}, TORCH_VERSION={TORCH_VERSION}.",
+      "bom-ref": "pypi/BUILD_MONAI_CPP@={BUILD_CPP}, BUILD_MONAI_CUDA={BUILD_CUDA}, TORCH_VERSION={TORCH_VERSION}."
+    },
+    {
+      "type": "library",
+      "name": "-fopenmp",
+      "version": "=libiomp5",
+      "purl": "pkg:pypi/-fopenmp@libiomp5",
+      "bom-ref": "pypi/-fopenmp@=libiomp5"
+    }
+  ]
+}
