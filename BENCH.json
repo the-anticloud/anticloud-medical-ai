@@ -540,10 +540,10 @@
  "version": "1.0.0",
  "source": {
   "git": {
-   "head": "a7904ae138c01cc90ad9c3bdf52c10218bde315f",
-   "url": "https://github.com/Project-MONAI/MONAI.git",
-   "branch": "dev",
-   "sha_verified_from": "local .git HEAD"
+   "url": "https://github.com/japan-medical-ai/medical-ai-course-materials",
+   "head": "b5c21ff9c7bb12862f72fb3475a2a340c4dab863",
+   "sha_verified_from": "revendor 2026-10-15: GitHub API commit lookup",
+   "previous_substitute": "https://github.com/Project-MONAI/MONAI.git"
   }
  }
 }
